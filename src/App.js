@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { Container } from 'reactstrap';
+
+import Entry from './components/Entry';
+import Activities from './components/Activities';
 
 function App() {
+
+  const [epochTime, setEpochTime] = useState('400');
+  const [epochs, setEpochs] = useState('10');
+  const [isEntered, setIsEntered] = useState(false);
+  const [animatedClass, setAnimatedClass] = useState("");
+
+  const enter = () => {
+    if (!isEntered) {
+      setAnimatedClass('animate__fadeOut');
+      setTimeout(() => {
+        setAnimatedClass('animate__fadeIn');
+        setIsEntered(true);
+      }, 500);
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: 'black', color: 'white' }}>
+      <Container className="pt-5">
+        <div className={`animate__animated ${animatedClass}`}>
+          {!isEntered
+            ? <Entry
+              epochTime={epochTime}
+              setEpochTime={setEpochTime}
+              epochs={epochs}
+              setEpochs={setEpochs}
+              enter={enter}
+            />
+            : <Activities time={parseFloat(epochs) * parseFloat(epochTime)} />}
+        </div>
+      </Container>
     </div>
   );
 }

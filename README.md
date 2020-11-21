@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Waiting for Network
+
+***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
