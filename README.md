@@ -1,6 +1,6 @@
 # Waiting for Network
 
-Simple calculator to find activities while waiting for networks to train.
+Things to do while you wait for your network to train.
 
 ***
 

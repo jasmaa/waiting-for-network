@@ -5,7 +5,6 @@ import Entry from './components/Entry';
 import Activities from './components/Activities';
 
 function App() {
-
   const [epochTime, setEpochTime] = useState('400');
   const [epochs, setEpochs] = useState('10');
   const [isEntered, setIsEntered] = useState(false);

@@ -37,14 +37,14 @@ export const activities = [
     rate: 4,
   },
   {
-    generator: (n, item) => `Save ${n} ${pluralize(item, n)} before they hit Iribe.`,
-    item: 'bird',
-    rate: NaN,
-  },
-  {
     generator: (n, item) => `Drink ${n} ${pluralize(item, n)} of water.`,
     item: 'bottle',
     rate: 1 / 180,
+  },
+  {
+    generator: (n, item) => `Save ${n} ${pluralize(item, n)} before they hit Iribe.`,
+    item: 'bird',
+    rate: NaN,
   },
   {
     generator: (n, item) => `Draw ${n} ${pluralize(item, n)}.`,
@@ -90,6 +90,11 @@ export const activities = [
     generator: (n, item) => `Take ${n} standardized ${pluralize(item, n)}.`,
     item: 'exam',
     rate: 1 / 10800,
+  },
+  {
+    generator: (n, item) => `Fill out ${n} job ${pluralize(item, n)}.`,
+    item: 'application',
+    rate: 1 / 120,
   },
   {
     generator: (n, item) => `Plan ${n} virtual ${pluralize(item, n)}.`,
