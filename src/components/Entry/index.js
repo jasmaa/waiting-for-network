@@ -3,8 +3,12 @@ import * as pluralize from 'pluralize';
 
 import style from './style.module.css';
 
+/**
+ * Epoch and epoch time entry
+ * 
+ * @param {*} param0 
+ */
 export default function Entry({ epochTime, setEpochTime, epochs, setEpochs, enter }) {
-
   return (
     <>
       <Row className="d-flex justify-content-center">

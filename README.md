@@ -1,5 +1,7 @@
 # Waiting for Network
 
+Simple calculator to find activities while waiting for networks to train.
+
 ***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

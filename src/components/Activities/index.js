@@ -1,13 +1,18 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 import * as pluralize from 'pluralize';
 
 import { activities } from '../../activities';
 
-export default function Activities({ time }) {
+/**
+ * Activity listing
+ * 
+ * @param {*} param0 
+ */
+export default function Activities({ time, goBack }) {
 
   return (
-    <div>
+    <div className="py-3">
       <h3 style={{ color: 'gray' }}>...I could</h3>
       {activities.map(({ generator, item, rate }, i) => {
         const roundedTotalTime = Math.round(100 * rate * time) / 100;
@@ -23,6 +28,7 @@ export default function Activities({ time }) {
           </Row>
         );
       })}
+      <Button onClick={goBack}>Go Back</Button>
     </div>
   );
 }

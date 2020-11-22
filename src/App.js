@@ -21,6 +21,16 @@ function App() {
     }
   }
 
+  const goBack = () => {
+    if (isEntered) {
+      setAnimatedClass('animate__fadeOut');
+      setTimeout(() => {
+        setAnimatedClass('animate__fadeIn');
+        setIsEntered(false);
+      }, 500);
+    }
+  }
+
   return (
     <div style={{ backgroundColor: 'black', color: 'white' }}>
       <Container className="pt-5">
@@ -33,7 +43,10 @@ function App() {
               setEpochs={setEpochs}
               enter={enter}
             />
-            : <Activities time={parseFloat(epochs) * parseFloat(epochTime)} />}
+            : <Activities
+              time={parseFloat(epochs) * parseFloat(epochTime)}
+              goBack={goBack}
+            />}
         </div>
       </Container>
     </div>
