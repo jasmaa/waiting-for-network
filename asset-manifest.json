@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/waiting-for-network/static/css/main.36bdf709.chunk.css",
+    "main.js": "/waiting-for-network/static/js/main.995ce7fe.chunk.js",
+    "main.js.map": "/waiting-for-network/static/js/main.995ce7fe.chunk.js.map",
+    "runtime-main.js": "/waiting-for-network/static/js/runtime-main.0a885fc0.js",
+    "runtime-main.js.map": "/waiting-for-network/static/js/runtime-main.0a885fc0.js.map",
+    "static/css/2.fe40c960.chunk.css": "/waiting-for-network/static/css/2.fe40c960.chunk.css",
+    "static/js/2.bbabca20.chunk.js": "/waiting-for-network/static/js/2.bbabca20.chunk.js",
+    "static/js/2.bbabca20.chunk.js.map": "/waiting-for-network/static/js/2.bbabca20.chunk.js.map",
+    "static/js/3.bf46665c.chunk.js": "/waiting-for-network/static/js/3.bf46665c.chunk.js",
+    "static/js/3.bf46665c.chunk.js.map": "/waiting-for-network/static/js/3.bf46665c.chunk.js.map",
+    "index.html": "/waiting-for-network/index.html",
+    "static/css/2.fe40c960.chunk.css.map": "/waiting-for-network/static/css/2.fe40c960.chunk.css.map",
+    "static/css/main.36bdf709.chunk.css.map": "/waiting-for-network/static/css/main.36bdf709.chunk.css.map",
+    "static/js/2.bbabca20.chunk.js.LICENSE.txt": "/waiting-for-network/static/js/2.bbabca20.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a885fc0.js",
+    "static/css/2.fe40c960.chunk.css",
+    "static/js/2.bbabca20.chunk.js",
+    "static/css/main.36bdf709.chunk.css",
+    "static/js/main.995ce7fe.chunk.js"
+  ]
+}
