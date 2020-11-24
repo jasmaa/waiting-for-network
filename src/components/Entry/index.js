@@ -13,11 +13,11 @@ export default function Entry({ epochTime, setEpochTime, epochs, setEpochs, ente
     <>
       <Row className="d-flex justify-content-center">
         <div className="d-flex flex-row">
-          <h3 className="mx-2" style={{ color: 'gray', marginTop: '10%' }}>
+          <h3 className={style['header-text']}>
             While my model trains
-            <input className={style['input']} value={epochs} onChange={e => setEpochs(e.target.value)} />
+            <input className={style['num-input']} value={epochs} onChange={e => setEpochs(e.target.value)} />
             {pluralize('epoch', parseFloat(epochs))} for
-          <input className={style['input']} value={epochTime} onChange={e => setEpochTime(e.target.value)} />
+          <input className={style['num-input']} value={epochTime} onChange={e => setEpochTime(e.target.value)} />
             {pluralize('second', parseFloat(epochTime))} per epoch...
         </h3>
         </div>

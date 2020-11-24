@@ -8,7 +8,7 @@ function App() {
   const [epochTime, setEpochTime] = useState('400');
   const [epochs, setEpochs] = useState('10');
   const [isEntered, setIsEntered] = useState(false);
-  const [animatedClass, setAnimatedClass] = useState("");
+  const [animatedClass, setAnimatedClass] = useState("animate__fadeIn");
 
   const enter = () => {
     if (!isEntered) {

@@ -12,11 +12,14 @@ import { activities } from '../../activities';
 export default function Activities({ time, goBack }) {
 
   return (
-    <div className="py-3">
+    <div className="pt-3 pb-5">
       <h3 style={{ color: 'gray' }}>...I could</h3>
       {activities.map(({ generator, item, rate }, i) => {
+        
+        // Round time for formatting
         const roundedTotalTime = Math.round(100 * rate * time) / 100;
         const roundedRate = Math.round(100000 * rate) / 100000;
+
         return (
           <Row key={i} className="d-flex align-items-center my-5">
             <Col>
